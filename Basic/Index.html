@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First Webpage!</title>
+    <link rel="stylesheet" href="css/style.css">
     <style>
         .myDiv {
             border: 5px outset black;
@@ -31,12 +32,38 @@
             font-size:40px;
             text-align:center;
         }
-        
+        #square      {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            margin: auto;
+            position: relative;
+            left:1000px;
+            rotate: -45deg;
+            animation: rotate 3s infinite alternate ease-in-out, slide 1s forwards ease-in-out;
+
+        }
+
+        @keyframes rotate {
+            to {
+                rotate: 45deg;
+            }
+        }
+        @keyframes slide {
+            to{
+                left: 0;
+            }
+        }
     </style>
     
 </head>
 
 <body>
+    <ul class="nav">
+        <li class="active"><a href="Index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about.html">About Me</a></li>
+    </ul>
     <div class="myDiv"><h1>Welcome to my webpage!</h1></div>
     <div class="myDiv"><h2> This was made by Dane Youngquist</h2></div>
 <p>We <em>will</em> learn how to design <strong>web pages</strong></p>
@@ -46,6 +73,8 @@
     <li>Pizza</li>
     <li>Gyros</li>
 </ol>
+
+<div id="square"></div>
 
 <p>Here are my favorite websites</p>
 <a href="https://eastsideprep.org" target="_blank">My School</a><br>

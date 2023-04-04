@@ -1,0 +1,45 @@
+body{
+    background-color: gold;
+    }
+    
+    .nav {
+        list-style-type: none;
+        background-color: gray;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 6px solid black;
+    }
+    
+    ul.nav li{
+        float: left;
+    }
+    
+    ul.nav li a{
+        display:block;
+        padding: 8px 16px;
+        color: yellow;
+        text-decoration: none;
+        
+    }
+    
+    ul.nav a:hover{
+        background-color: darkslategrey;
+        color: white;
+    }
+    
+    .active {
+        background-color: lightgrey;
+    }
+
+    .link{
+        font-size:30px;
+        color:blueviolet;
+    }
+    .paragraph {
+        font-size:30px;
+    }
+    .number {
+        font-size:25px;
+        
+    }

@@ -1,14 +1,13 @@
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns:35% 35% 30%;
     gap: 10px;
   }
 
   .grid-item {
     background-color: grey;
-    padding: 20px;
-    font-size: 30px;
+    padding: 5px;
+    font-size: 15px;
     text-align: center;
     border-radius: 5px;
     font-family: Arial, sans-serif; /* Change the font family */
@@ -46,7 +45,7 @@ ul.nav a:hover{
     background-color: #dadada;
     color: rgb(53, 53, 53);
     font-weight: bolder;
-    font-size: 31px;
+    font-size: 15px;
 
 } 
 
@@ -56,8 +55,24 @@ ul.nav a:hover{
 }
 .main-image {
 grid-row:1 ;
-grid-column:1 span 2;
+grid-column:1 /span 3;
 }
 .sidenav {
-    grid-row:3 span 2 ;
-    gr 
+    grid-row:2 /span 3 ;
+    grid-column:3;
+}
+.main1 {
+    grid-row: 2;
+    grid-column:1;
+}
+.main2 {
+    grid-row:2;
+    grid-column:2;
+}
+.main3 {
+    grid-row:3;
+    grid-column:1 /span 2;
+}
+body {
+    background-color:slategray;
+}

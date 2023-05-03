@@ -76,3 +76,14 @@ grid-column:1 /span 3;
 body {
     background-color:slategray;
 }
+.footer {
+			height: 50px;
+			background-color: darkslategray;
+			color: white;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			padding: 5px;
+            text-align: center;
+		}

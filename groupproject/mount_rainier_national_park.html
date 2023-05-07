@@ -7,13 +7,24 @@
     <title>Mt. Rainier National Park</title>
     
     <style>
+        .zoomMe{
+            transition: transform .2s;
+  width: 600px;
+  
+
+  margin: 0 auto;
+        }
+        .zoomMe:hover {
+  -ms-transform: scale(2); 
+  -webkit-transform: scale(2); 
+  transform: scale(2);}
         .gridcontainer {
     display: grid;
     grid-template-columns:35% 35% 30%;
     gap: 10px;
   }
         .firstrowphotos{
-            display: block;
+            display: grid;
             width:200px;
             margin-left: auto;
             margin-right: auto;
@@ -104,11 +115,11 @@ body{
     grid-column: 1;
     grid-row: 3;
   }
-  .content1{
+  .content2{
     grid-column: 2;
     grid-row: 3;
   }
-  .content1{
+  .content3{
     grid-column: 3;
     grid-row: 3;
   }
@@ -132,9 +143,9 @@ body{
     <h2>The mesmerizing complexity of nature's beauty</h2>
     <div class="gridcontainer">
         <div class="griditem firstbody">brrrr</div>
-        <div class="griditem photo1"><img class="firstrowphotos" src="images/542078-wolf.jpg"></div>
-        <div class="griditem photo2"><img class="firstrowphotos" src="images/2560x1600-861325-Mount-Rainier-National-Park-Mountains-USA-Snow-Trail.jpg"></div>
-        <div class="griditem photo3"><img class="firstrowphotos" src="images/Webpage-Home-Photo.jpg"></div>
+        <div class="griditem photo1"><img class="firstrowphotos zoomMe" src="images/542078-wolf.jpg"></div>
+        <div class="griditem photo2"><img class="firstrowphotos zoomMe" src="images/2560x1600-861325-Mount-Rainier-National-Park-Mountains-USA-Snow-Trail.jpg"></div>
+        <div class="griditem photo3"><img class="firstrowphotos zoomMe" src="images/Webpage-Home-Photo.jpg"></div>
         <div class="griditem content1"><p class="secondrowcontent"> lorem ipsum</p></div>
         <div class="griditem content2"><p class="secondrowcontent"> lorem ipsum</p></div>
         <div class="griditem content3"><p class="secondrowcontent"> lorem ipsum</p></div>

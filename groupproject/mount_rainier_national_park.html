@@ -7,17 +7,20 @@
     <title>Mt. Rainier National Park</title>
     
     <style>
+        table, th, td {
+  border: 1px solid;
+}
         .zoomMe{
             transition: transform .2s;
-  width: 600px;
+            
   
 
-  margin: 0 auto;
+  
         }
         .zoomMe:hover {
-  -ms-transform: scale(2); 
-  -webkit-transform: scale(2); 
-  transform: scale(2);}
+  -ms-transform: scale(1.75); 
+  -webkit-transform: scale(1.75); 
+  transform: scale(1.75);}
         .gridcontainer {
     display: grid;
     grid-template-columns:35% 35% 30%;
@@ -88,10 +91,12 @@ body{
     text-align: center;
   }
   .firstbody{
-    Font-size:30px;
-    grid-column: 1 span/ 3;
+    Font-size:15px;
+    grid-column: 1 / span 3;
     grid-row: 1;
     text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   .photo1{
     grid-column: 1;
@@ -140,14 +145,45 @@ body{
         <li><a href= "tiger_mountain_park.html">Tiger Mountain Park</a></li>
     </ul>
 
-    <h2>The mesmerizing complexity of nature's beauty</h2>
+    <!--<h2>The mesmerizing complexity of nature's beauty</h2>-->
     <div class="gridcontainer">
-        <div class="griditem firstbody">brrrr</div>
+        <div class="griditem firstbody"><h3 style="Font-size: 30px;">A quick history</h3><br><p>The history of Mt. Rainier ranges very widely, with some early volcanic deposits, being found formed from the lily formation, which happened as late as 2.9 million years ago. However, the version of Mt. Rainier that we see today is about 500,000 years old, as it was made on top of the older Mt. Rainier remains. Although it is hard to tell how many times Mt.Rainier has actually erupted, it is known that the last time eruptive activity wa reorded was in 1894-95.</p></div>
         <div class="griditem photo1"><img class="firstrowphotos zoomMe" src="images/542078-wolf.jpg"></div>
         <div class="griditem photo2"><img class="firstrowphotos zoomMe" src="images/2560x1600-861325-Mount-Rainier-National-Park-Mountains-USA-Snow-Trail.jpg"></div>
         <div class="griditem photo3"><img class="firstrowphotos zoomMe" src="images/Webpage-Home-Photo.jpg"></div>
         <div class="griditem content1"><p class="secondrowcontent"> lorem ipsum</p></div>
-        <div class="griditem content2"><p class="secondrowcontent"> lorem ipsum</p></div>
+        <div class="griditem content2"><p class="secondrowcontent"> <table style="margin-left: 20%; margin-right: 40%;">
+            <tr>
+              <th>Year</th>
+              <th>Number of Vehicles</th>
+              <th>Number of Visitors</th>
+              <th>Percent change from Previous years</th>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td>962,128</td>
+              <td>2,371,585</td>
+              <td>-4.29</td>
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td>1,000,545</td>
+              <td>2,477,816</td>
+              <td>+53.09</td>
+            </tr>
+            <tr>
+                <td>2020</td>
+                <td>633,981</td>
+                <td>1,618,558</td>
+                <td>-28.02</td>
+            </tr>
+            <tr>
+                <td>2019</td>
+                <td>948,638</td>
+                <td>2,248,518</td>
+                <td>-0.32</td>
+            </tr>
+          </table></p></div>
         <div class="griditem content3"><p class="secondrowcontent"> lorem ipsum</p></div>
         <div class="griditem">8</div>
         <div class="griditem">9</div>

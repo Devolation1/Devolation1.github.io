@@ -9,6 +9,49 @@
 <body>
     <h1>Lets learn javascript</h1>
     <h2>How do we do onclick events and alerts on an anchor</h2>
-    <a href="NBA.com" target="_blank">Nba website</a>
+    <a href="NBA.com" target="_blank" onclick="alert('Warning! Your computer has contracted a virus!')">Nba website</a>
+
+    <hr>
+    <h2>How do we display and hide text?</h2>
+        <h2>What's my secret identity?</h2>
+        <p id="secret"></p>
+        <button onclick="document.getElementById('secret').innerHTML='Lebomb James';document.getElementById('secret').style.display='block'">Reveal!</button>
+        <button onclick="document.getElementById('secret').style.display='none'">Hide!</button>
+        <hr>
+        <h2>How do we change an image with JavaScript</h2>
+        <img src="images/download.jfif" alt="man" id="myImage">
+        <button onclick="document.getElementById('myImage').src='images/dot.jfif'">Man on</button>
+        <button onclick="document.getElementById('myImage').src='images/download.jfif'">Man off</button>
+        <hr>
+        <h2>How do we change css styles with a button?</h2>
+        <p id="alice">Hi. I am Alice.</p>
+        <button onclick="document.getElementById('alice').style.color='blue'; document.getElementById('alice').style.fontSize='5px'">Cake- Eat me</button>
+        <button onclick="document.getElementById('alice').style.color='red'; document.getElementById('alice').style.fontSize='50px'">Potion- Drink me</button>
+        <button onclick="document.getElementById('alice').style.color='black'; document.getElementById('alice').style.fontSize='25px'">Restore</button>
+        <hr>
+        <h2>How do we return user input with a function</h2>
+        <button onclick="askName()">What's your name?</button>
+        <p id="ask-name"></p>
+        <script>
+            function askName(){
+            let nameParagraph = document.getElementById("ask-name");
+            let name =prompt("What is your name?");
+            // now lets decide what to do
+            if (name ==="Lebron"){
+                nameParagraph.innerHTML="Lakers are a bum team";
+            } else{
+                nameParagraph.innerHTML="Hello " + name + "!Nice to meet you.";
+            }
+            }
+        </script>
+        <hr>
+        <h2 id="bcolor">This will change the background color!</h2>
+        <button onclick="document.getElementById('bcolor').style.backgroundColor='red'">Red</button>
+        <button onclick="document.getElementById('bcolor').style.backgroundColor='blue'">Blue</button>
+        <hr>
+        <h2 id="border">This will add different types of borders</h2>
+        <button onclick="document.getElementById('border').style.border='solid'">Solid</button>
+        <button onclick="document.getElementById('border').style.border='outset 10px'">Outset</button>
+        <button onclick="document.getElementById('border').style.border='none'">None</button>
 </body>
 </html>

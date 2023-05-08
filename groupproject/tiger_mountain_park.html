@@ -7,6 +7,86 @@
     <title>Tiger Mountain Park</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+<style>
+    .header1 {
+    grid-column:1 /span 3;
+    grid-row:1;
+  }
+  .header2 {
+    grid-column:1 /span 3 ;
+    grid-row:2;
+  }
+
+
+ .image1 {
+    grid-column: 1;
+    grid-row:3;
+ }
+ .para1 {
+    
+    grid-column: 2;
+    grid-row:3;
+    Font-size:20px;
+ }
+ .sideimage1{
+    grid-column: 3;
+    grid-row: 3;
+ }
+ 
+
+ .para2 {
+    grid-column:1;
+    grid-row:4;
+    font-size:22px;
+ }
+ .sideimage2{
+    grid-column: 2 /span 3;
+    grid-row: 4;
+ }
+
+
+ .image3 {
+    grid-column:1;
+    grid-row:5;
+ }
+ .para3 {
+    grid-column:2;
+    grid-row:5;
+    font-size:30px;
+ }
+ .sideimage3{
+    grid-column: 3;
+    grid-row: 5;
+    font-size: 15px;
+ }
+
+
+ .image4 {
+    grid-column: 1;
+    grid-row:6;
+ }
+ .para4 {
+    grid-column:2;
+    grid-row:6;
+    font-size:30px;
+ }
+ .sideimage4{
+    grid-column: 3;
+    grid-row: 6;
+    font-size: 20px;
+ }
+
+
+ .video {
+    grid-column:3;
+    grid-row:3;
+ }
+ table, th, tr{
+    border:solid;
+    border-radius:10px;
+    border-color:navy;
+ }
+</style>
 <h1>Tiger Mountain Park</h1>
 
 <body>
@@ -17,14 +97,54 @@
         <li><a href= "north_cascades_park.html">North Cascades National Park</a></li>
         <li class="active"><a href="tiger_mountain_park.html">Tiger Mountain Park</a></li>
     </ul>
-    <h1>Less than an hour's drive; nice day trip!</h1>
-    <h2>Tiger Mountain is actually a State Forest, not a National Park!</h2>
     <div class="gridcontainer">
-        <div class="griditem header1">    <h1>Some stuff</h1></div>
-        <div class="griditem header2">  <h2>More stuff</h2></div>
-        <div class="griditem image1"><img src="images/6.jpg" alt="Ross Lake" style="width:90%"></div>
-        <div class="griditem para1"> <p>North Cascades National Park is home to some stunning scenery! Nearby are the Ross Lake National Recreational Area and Lake Chelan National Recreational Area, which you will pass while traveling through the North Cascades. </p></div>
-        <div class="griditem image2"><img src="images/5.jpg" alt="Mountain Pass" style="width:90%"></div>
+
+        <div class="griditem header1">    <h1>Tiger Mountain is less than an hour's drive from Kirkland; nice day trip!</h1></div>
+        <div class="griditem header2">  <h2>Tiger Mountain is actually a State Forest, not a National Park! The perk is that there's no fee, unlike Nation Parks.</h2></div>
+
+        <div class="griditem image1"><img src="images/point.webp" alt="Poo Poo Point" style="width:90%"><br><p>Poo Poo Point</p></div>
+        <div class="griditem para1"> <p>Tiger Mountain is a great Saturday trip for the whole family! The little ones can watch paragliders jump off the mountain and land gracefully on the ground like birds. Older kids can hike all the way up to the top, on nicely maintained trails. Fun fact: <i>Grey's Anatomy</i> fans may recognize Poo Poo Point as where Derek and Merideth's house is located.</p></div>
+        <div class="griditem sideimage1"><img src="images/trails.jpg" alt="Tiger Mountain Trails" style="width:90%;"><br><p>Tiger Mountain Trails</p></div>
+
+        
+        
+        
+        <div class="griditem para2"> <p>Paragliding is fun and easy at Tiger Mountain! If you have the equipment, that is. You can either climb up to the top, known as Poo Poo Point, which takes about an hour, or you can ride a bus. It's probably better to take a bus since paragliding equipment can be heavy. <br><br> At Poo Poo Point, paragliders assemble equipment, put on their harness, and run into the sky! It's fun to watch even if you don't partake.</p></div>
+        <div class="griditem sideimage2"><iframe width="560" height="315" src="https://www.youtube.com/embed/JZmUb6NGTfo?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+
+        <div class="griditem image3"><img src="images/rainier.jpg" alt="Rainier" style="width:90%"><p style="font-size: 15px;">Mt. Rainier as seen from Tiger Mountain</p></div>
+        <div class="griditem para3"> 
+            <table>
+                <tr>
+                  <th>Station</th>
+                  <th>Frequency</th>
+                </tr>
+                <tr>
+                  <td>KNKX</td>
+                  <td>88.5</td>
+                </tr>
+                <tr>
+                  <td>KQMV</td>
+                  <td>92.5</td>
+                </tr>
+                <tr>
+                    <td>KING-FM</td>
+                    <td>98.1</td>
+                </tr>
+                <tr>
+                    <td>KISW</td>
+                    <td>99.9</td>
+                </tr>
+                <tr>
+                    <td>KNDD</td>
+                    <td>107.7</td>
+                </tr>
+              </table>
+        
+        <p style="font-size: 15px;">Radio stations that broadcast from Tiger Mountain</p>    </div>
+        <div class="griditem sideimage3"><img src="images/grey.jpg" alt="Poo Poo Point in Grey's Anatomy" style="width:90%"><p>Still from <em>Grey's Anatomy</em>, Merideth and Dereck's House of Candles. In the distance you can see lights from Lake Sammamish beach houses.</p></div>
+        
     </div>
     <div class="footer">By Andrew Ma</div>
 </body>

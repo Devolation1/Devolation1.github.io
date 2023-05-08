@@ -6,9 +6,134 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mt. Rainier National Park</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        table, th, td {
+  border: 1px solid;
+}
+        .zoomMe{
+            transition: transform .2s;
+        }
+        /*NEW FEATURE!*/
+        .zoomMe:hover {
+  -ms-transform: scale(1.75); 
+  -webkit-transform: scale(1.75); 
+  transform: scale(1.75);}
+        .gridcontainer {
+    display: grid;
+    grid-template-columns:35% 35% 30%;
+    gap: 10px;
+  }
+        .firstrowphotos{
+            display: grid;
+            width:200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .secondrowcontent{
+            
+            text-align: center;
+            font: 10px;
+        }
+            h1, h2, div{
+                color: white;
+            }
+        body{
+            background-image: url(images/USA_Parks_Mountains_Lupinus_Mount_Rainier_National_542258_1920x1080\(new\).jpg);
+            
+        
+            
+        }
+        .griditem {
+    color: white;
+    
+  } 
+  .nav {
+    list-style-type: none;
+    background-color: darkslategray;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border:outset 3px;
+    border-color:darkolivegreen;
+
+}
+ul.nav li{
+    float: left;
+}
+
+ul.nav li a{
+    display:block;
+    padding: 8px 16px;
+    color: green;
+    text-decoration: none;
+}
+ul.nav a:hover{
+    background-color: green;
+    color: white;
+}
+
+.active {
+    background-color: lightgrey;
+}
+body{
+    background-color:lightskyblue;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: green;
+    color: black;
+    text-align: center;
+  }
+  .firstbody{
+    Font-size:15px;
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .photo1{
+    grid-column: 1;
+    grid-row: 2;
+    
+
+  }
+  .photo2{
+    grid-column: 2;
+    grid-row: 2;
+    
+
+  }
+  .photo3{
+    grid-column: 3;
+    grid-row: 2;
+   
+
+  }
+  .content1{
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .content2{
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .content3{
+    grid-column: 3;
+    grid-row: 3;
+  }
+    </style>
 </head>
+    
+
 <h1>Mt. Rainier National Park</h1>
 <body>
+    
+    
+    
     <ul class="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="olympic_national_park.html">Olympic National Park</a></li>
@@ -16,7 +141,52 @@
         <li><a href= "north_cascades_park.html">North Cascades National Park</a></li>
         <li><a href= "tiger_mountain_park.html">Tiger Mountain Park</a></li>
     </ul>
-    <h2>The mesmerizing complexity of nature's beauty</h2>
+
+    <!--<h2>The mesmerizing complexity of nature's beauty</h2>-->
+    <div class="gridcontainer">
+        <div class="griditem firstbody"><h3 style="Font-size: 30px;">A quick history</h3><br><p>The history of Mt. Rainier ranges very widely, with some early volcanic deposits, being found formed from the lily formation, which happened as late as 2.9 million years ago. However, the version of Mt. Rainier that we see today is about 500,000 years old, as it was made on top of the older Mt. Rainier remains. Although it is hard to tell how many times Mt.Rainier has actually erupted, it is known that the last time eruptive activity wa reorded was in 1894-95.</p></div>
+        <div class="griditem photo1"><img class="firstrowphotos zoomMe" src="images/542078-wolf.jpg"></div>
+        <div class="griditem photo2"><img class="firstrowphotos zoomMe" src="images/2560x1600-861325-Mount-Rainier-National-Park-Mountains-USA-Snow-Trail.jpg"></div>
+        <div class="griditem photo3"><img class="firstrowphotos zoomMe" src="images/Webpage-Home-Photo.jpg"></div>
+        <div class="griditem content1"><p class="secondrowcontent" style="margin-left: 20%; margin-right: 20%;">Many prominent species of the Pacific Northwest also inhabit Mt. Rainier national park, including the Black bear, Cougar, bobat and redfox. Marine species, mostly fish, also inhabit this environment, with the majority of them being byll trout, cutthroat troat and mountain whitefish. Anandromous or migratory fish, also appear in the park and special time periods. Last of all, the flora of Mt. Rainier National park is plentiful and diverse as well. There are over 960 vascular(plants with vascular tissue) plant species and more than 260 nonvascular plant species that have been identified.</p></div>
+        <div class="griditem content2"><p class="secondrowcontent"><p>Mt. Rainier has many natural attractions</p> <table style="margin-left: 20%; margin-right: 40%;">
+            <tr>
+              <th>Year</th>
+              <th>Number of Vehicles</th>
+              <th>Number of Visitors</th>
+              <th>Percent change from Previous years</th>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td>962,128</td>
+              <td>2,371,585</td>
+              <td>-4.29</td>
+            </tr>
+            <tr>
+              <td>2021</td>
+              <td>1,000,545</td>
+              <td>2,477,816</td>
+              <td>+53.09</td>
+            </tr>
+            <tr>
+                <td>2020</td>
+                <td>633,981</td>
+                <td>1,618,558</td>
+                <td>-28.02</td>
+            </tr>
+            <tr>
+                <td>2019</td>
+                <td>948,638</td>
+                <td>2,248,518</td>
+                <td>-0.32</td>
+            </tr>
+          </table></p></div>
+        <div class="griditem content3"><p class="secondrowcontent"> lorem ipsum</p></div>
+        <div class="griditem">8</div>
+        <div class="griditem">9</div>
+      </div>
+      
     <div class="footer">This page was made by Thaddeus</div>
+
 </body>
 </html>

@@ -8,11 +8,37 @@
     <link rel="stylesheet" href="css/style.css">
 </head> <link rel="stylesheet" href="https://use.typekit.net/ils3keh.css">
 <style>
-      
+      .dropdown{/*NEW FEATURE*/
+position: relative;
+display:inline-block;
+border:outset 5px green;
+background-color: cornflowerblue;
+}
+
+.dropdown-info{/*NEW FEATURE*/
+    display: none;
+    position:absolute;
+    background-color: skyblue;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border: solid 2px;
+    font-size: 15px;
+}
+.dropdown:hover .dropdown-info {/*NEW FEATURE*/
+    display: block;
+}
       .dropdowngrid { /*NEW FEATURE*/
     grid-row:5;
     grid-column: 3;
     background-image: url(images/mtrainer2.jpg);/*NEW FEATURE*/
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
 }
     
 </style>

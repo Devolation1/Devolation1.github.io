@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-</head>
+</head> <link rel="stylesheet" href="https://use.typekit.net/ils3keh.css">
 <style>
       
   .header1 {
@@ -62,16 +62,55 @@
     border:solid 4px;
     border-radius:10px;
     border-color:navy;
+
  }
 .table {
     font-size:23px;
 } 
-.info {
-    background-image:url(images/mtrainer.jpg) ;
-    
-}    
 
- 
+.dropdown{
+position: relative;
+display:inline-block;
+border:outset 5px green;
+background-color: cornflowerblue;
+}
+
+.dropdown-info{
+    display: none;
+    position:absolute;
+    background-color: skyblue;
+    min-width: 260px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border: solid 2px;
+    font-size: 15px;
+}
+.dropdown:hover .dropdown-info {
+    display: block;
+}
+.dropdowngrid {
+    grid-row:5;
+    grid-column: 3;
+}
+.a1 {
+    font-size: 30px;
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+p {
+    font-family: "interstate-mono", monospace;
+font-weight: 400;
+font-style: normal;
+}
+body {
+    font-family: "interstate-mono", monospace;
+font-weight: 400;
+font-style: normal;
+}
+
+    
 </style>
 <body>
     <h1>Washington National Parks</h1>
@@ -97,7 +136,8 @@
         <div class="griditem image4"><img src="images/tiger.jpg" alt="Tiger Mountain" style="width:100%"></div>
         <div class="griditem para4"><p>Not a national park but another park you can go to in washington is Tiger Mountain State Forest. <br> This forest is located in Issaquah Washington </p></div>
         <div class="griditem video"><iframe width="560" height="315" src="https://www.youtube.com/embed/QhMk6xiHja0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-        <div class="griditem table"><table>
+        <div class="griditem table">
+            <table class="th1">
             <tr>
                 <th class="th1">National Parks</th>
                 
@@ -130,9 +170,23 @@
             
 
             
-        </table></div>
-        <div class="griditem info"><a href="https://www.nps.gov/mora/index.htm">Mount Rainer</a></div>
-     
+        </table>
+        </div>
+        <div class="griditem dropdowngrid">
+            <div class=" griditem dropdown ">
+                <span style="font-size:50px;">Links</span>
+                <div class="dropdown-info">
+                    <a class="a1" href="https://www.nps.gov/mora/index.htm" target="_blank">Mount Rainier</a>
+                    <br>
+                    <a class="a1" href="https://www.nps.gov/noca/index.htm" target="_blank">North Cascades </a>
+                    <br>
+                    <a class="a1" href="https://www.nps.gov/olym/index.htm" target="_blank">Olympic</a>
+                    <br>
+                    <a class="a1" href="https://www.dnr.wa.gov/Tiger" target="_blank">Tiger Mountain</a>
+                </div>
+            </div>
+        </div>
+       
           
           
           

@@ -27,7 +27,7 @@ function greet(){
         return;
     }
     // update output paragraph
-    greetParagraph.innerHTML="Greetings" + age + " year old" + fname + "!";
+    greetParagraph.innerHTML="Greetings " + age + " year old " + fname + "!";
 }
 
 // function to play the trivia game

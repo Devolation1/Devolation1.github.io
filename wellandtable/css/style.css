@@ -2,3 +2,56 @@
     border:solid 5px;
     border-radius:10px;
 }
+p{
+    font-family: "vendetta", serif;
+font-weight: 300;
+font-style: normal;
+font-size:30px;
+}
+h1 {
+    font-family: "vendetta", serif;
+font-weight: 700;
+font-style: normal;
+}
+h2 {
+    font-family: "vendetta", serif;
+font-weight: 700;
+font-style: normal;
+}
+h4 {
+    font-family: "vendetta", serif;
+font-weight: 700;
+font-style: normal;
+}
+h3 {
+    font-family: "vendetta", serif;
+font-weight: 700;
+font-style: normal;
+}
+a{
+    font-family: "vendetta", serif;
+font-weight: 300;
+font-style: italic;
+font-size:30px;
+}
+.nav1{
+    background-color: grey  ;
+}
+body {
+    background-color:lightcyan;
+}
+.lmenu{
+    border:solid 4px;
+    border-radius:10px;
+    background-color:lightgray
+}
+.dmenu{
+    border:solid 4px;
+    border-radius:10px;
+    background-color:lightgray;
+}
+.kidsmenu{
+    border:solid 4px;
+    border-radius:10px;
+    background-color: lightgray;
+}

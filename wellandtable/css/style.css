@@ -1,5 +1,5 @@
 .img{
-    border:solid 5px;
+    border:solid 3px;
     border-radius:10px;
 }
 p{
@@ -38,7 +38,7 @@ font-size:30px;
     background-color: grey  ;
 }
 body {
-    background-color:lightcyan;
+    background-color:white;
 }
 .lmenu{
     border:solid 4px;
